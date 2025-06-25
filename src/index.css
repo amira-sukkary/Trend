@@ -1,0 +1,26 @@
+body{
+    background-color: rgb(1, 1, 53);
+}
+.imagelayer{
+    position: absolute;
+    top:1%;
+    left: 3px;
+    right: 3px;
+    bottom: 16px;
+    background-color: rgba(21, 21, 21,0.6);
+    opacity: 0;
+    text-align: center;
+}
+.imagelayer:hover{
+    opacity: 1;
+}
+.imageinfo{
+    position: absolute;
+    width: 100%;
+    top: 30%;
+    left: 0;
+}
+.imageinfo h6{
+    font-size: 36px;
+    font-weight: 700;
+}
