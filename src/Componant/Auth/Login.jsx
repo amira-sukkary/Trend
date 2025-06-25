@@ -1,7 +1,7 @@
 import { useFormik } from "formik";
 import * as Yup from "yup";
 import {useNavigate} from 'react-router-dom'
-import toast from "react-hot-toast";
+import {toast} from "react-hot-toast";
 import axios from "axios";
 
 

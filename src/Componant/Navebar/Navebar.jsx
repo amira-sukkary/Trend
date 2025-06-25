@@ -1,12 +1,15 @@
+/* eslint-disable react/prop-types */
+
 import{Link} from 'react-router-dom';
 
-import {useNavigate} from 'react-router-dom'
+import {useNavigate} from 'react-router-dom';
 
 
 export default function Navebar({logindata , setLoginData}) {
   let navigate=useNavigate()
 function Logout(){
-  localStorage.setItem('token');
+  localStorage.removeItem('usertoken')
+
   setLoginData(null)
   navigate("/")
 }
@@ -15,7 +18,7 @@ function Logout(){
   
  <nav className="navbar navbar-expand-lg navbar-light bg-dark">
   <div className="container-fluid">
-   <Link className="navbar-brand text-white"to="">Navbar</Link>
+   <Link className="navbar-brand text-white"to="">Trend</Link>
     <button className="navbar-toggler bg-white border border-5 border-info" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span className="navbar-toggler-icon " />
     </button>
